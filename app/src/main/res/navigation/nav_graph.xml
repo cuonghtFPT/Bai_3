@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainDishFragment">
+    <!--Tạo id cho các fragment để định danh cho biểu đồ chuyến hướng
+    name= tên thư mục chứa Fragment(class)
+    action: định danh các hành động trong navigation graph
+    id action: set sự kiện cho từng action trong navigation graph
+    -->
+    <fragment
+        android:id="@+id/mainDishFragment"
+        android:name="com.example.kotlinbasic_bai2.fragments.MainDishFragment"
+        android:label="Main Dish Fragment">
+        <action
+            android:id="@+id/action_mainDishFragment_to_sideDishFragment"
+            app:destination="@id/sideDishFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sideDishFragment"
+        android:name="com.example.kotlinbasic_bai2.fragments.SideDishFragment"
+        android:label="Side Dish Fragment">
+        <action
+            android:id="@+id/action_sideDishFragment_to_dessertFragment"
+            app:destination="@id/dessertFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dessertFragment"
+        android:name="com.example.kotlinbasic_bai2.fragments.DessertFragment"
+        android:label="Dessert Fragment">
+        <action
+            android:id="@+id/action_dessertFragment_to_beverageFragment"
+            app:destination="@id/beverageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/beverageFragment"
+        android:name="com.example.kotlinbasic_bai2.fragments.BeverageFragment"
+        android:label="Beverage Fragment">
+        <action
+            android:id="@+id/action_beverageFragment_to_selectedFoodsFragment"
+            app:destination="@id/selectedFoodsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectedFoodsFragment"
+        android:name="com.example.kotlinbasic_bai2.fragments.SelectedFoodsFragment"
+        android:label="Selected Foods Fragment"></fragment>
+
+</navigation>

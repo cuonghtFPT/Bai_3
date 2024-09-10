@@ -1,0 +1,50 @@
+<!-- res/layout/fragment_beverage.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/checkboxBeverage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beverage 1"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/checkboxBeverage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beverage 2"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/checkboxBeverage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beverage 3"
+        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:ignore="UselessLeaf">
+        <Button
+            android:id="@+id/backBtnBeverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            tools:ignore="ButtonStyle,HardcodedText" />
+        <Button
+            android:id="@+id/nextBtnBeverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

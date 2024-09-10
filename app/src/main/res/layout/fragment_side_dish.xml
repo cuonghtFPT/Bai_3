@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/checkboxSideDish1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Side Dish 1"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/checkboxSideDish2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Side Dish 2"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/checkboxSideDish3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Side Dish 3"
+        tools:ignore="HardcodedText" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/backBtnSideDish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:id="@+id/nextBtnSideDish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+    </LinearLayout>
+
+</LinearLayout>
